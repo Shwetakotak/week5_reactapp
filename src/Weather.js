@@ -1,6 +1,16 @@
 import React from "react";
 import "./Weather.css";
+import axios from "axios";
+
 export default function Weather() {
+  function handleResponse(response) {
+    console.log(response.data);
+  }
+
+  const apiKey = "861fb20b505f7e96a549db90c19a5142";
+  let city = "New York";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(handleResponse);
   return (
     <div className="weather">
       <form>
@@ -36,20 +46,18 @@ export default function Weather() {
           </div>
         </div>
         <div className="col-md-3">
-          <ul>
+          <ul id="details">
             <li>Precipitation: 1%</li>
             <li>Humidity: 67%</li>
             <li>Wind: 18 km/h</li>
           </ul>
         </div>
-        <div className="col-sm-6">
-          <div className="float-right">
-            <h1>New York</h1>
-            <ul>
-              <li>Wednesday 6:00 PM</li>
-              <li>Mostly sunny</li>
-            </ul>
-          </div>
+        <div className="col-md-6" style={{ textAlign: "right" }}>
+          <h1>New York</h1>
+          <ul>
+            <li>Wednesday 6:00 PM</li>
+            <li>Mostly sunny</li>
+          </ul>
         </div>
       </div>
     </div>
