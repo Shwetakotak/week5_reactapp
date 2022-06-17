@@ -33,7 +33,7 @@
   list-style: none;
 }
 
-.weather img {
+.weather canvas {
   height: 64px;
   width: 64px;
   margin-top: 10px;
