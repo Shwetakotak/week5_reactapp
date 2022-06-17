@@ -34,8 +34,8 @@
 }
 
 .weather canvas {
-  height: 64px;
-  width: 64px;
+  height: 54px;
+  width: 54px;
   margin-top: 10px;
   display: inline-block;
 }
@@ -43,8 +43,8 @@
 .weather .temperature {
   font-weight: bold;
   color: rgb(33, 33, 33);
-  font-size: 64px;
-  line-height: 64px;
+  font-size: 54px;
+  line-height: 54px;
   font-weight: 400;
 }
 
