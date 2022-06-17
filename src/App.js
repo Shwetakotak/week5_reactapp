@@ -18,7 +18,7 @@ export default function App() {
           </a>{" "}
           and{" "}
           <a
-            href="https://62a88d1160770c29af5a4bbf--eloquent-cactus-5c8803.netlify.app"
+            href="https://eloquent-cactus-5c8803.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
